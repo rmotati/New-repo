@@ -1,0 +1,35 @@
+---
+# Demo coding
+- hosts: 127.0.0.1
+  connection: ssh
+  tasks:
+    - name: Install httpd
+    yum:
+        name: httpd
+        state: latest
+    - name: restart httpd
+    service: 
+        name: httpd
+        state: restart
+    - name: enable httpd
+        name: httpd
+        state: enabled
+
+    - name: enable httpd
+        name: httpd
+        state: enabled
+
+    - name: Install htop
+    yum:
+        name: htop
+        state: latest
+
+    - name: Install htop
+    yum:
+        name: htop
+        state: latest
+
+    - name: Install htop
+    yum:
+        name: htop
+        state: latest
